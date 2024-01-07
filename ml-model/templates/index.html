@@ -54,17 +54,16 @@
             <div class="row">
                 <div class="col-md">
                     <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Exercise\hour in a day 🏋🏻</label>
+                        <label for="exampleInputEmail1" class="form-label">Exercise hour in a week 🏋🏻</label>
                         <input class="form-control" id="exampleInputEmail1" name="exercise" aria-describedby="emailHelp" placeholder="e.g. 0.5" required>
                     </div>
                 </div>
                 <div class="col-md">
                     <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Gender</label>
-                        <select class="form-select" id="exampleInputPassword1" name="gender">
-                            <option value="None">Select</option>
-                            <option value="male">Male</option>
-                            <option value="female">Female</option>
+                        <label for="exampleInputPassword1" class="form-label">Do consume alcohol?</label>
+                        <select class="form-select" name="is_alcohol" id="exampleInputPassword1">
+                            <option value="1">yes</option>
+                            <option value="0">no</option>
                         </select>
                     </div>
                 </div>
@@ -73,7 +72,10 @@
                 <div class="col-md">
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Do Smoking 🚬</label>
-                        <input class="form-control" name="smoker" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="e.g. yes or no" required>
+                        <select class="form-select" name="smoker" id="exampleInputPassword1">
+                            <option value="1">yes</option>
+                            <option value="0">no</option>
+                        </select>
                     </div>
                 </div>
                 <div class="col-md">
@@ -86,14 +88,17 @@
             <div class="row">
                 <div class="col-md">
                     <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Current Blood Pressure 💉</label>
-                        <input class="form-control" name="bp" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="e.g. 180/20" required>
+                        <label for="exampleInputEmail1" class="form-label">Heart Rate 💉</label>
+                        <input class="form-control" name="heart_rate" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="e.g. 72" required>
                     </div>
                 </div>
                 <div class="col-md">
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Suffered from Diabetes</label>
-                        <input class="form-control" name="is_diabetic" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="e.g. yes or no" required>
+                        <select class="form-select" name="is_diabetic" id="exampleInputPassword1">
+                            <option value="1">yes</option>
+                            <option value="0">no</option>
+                        </select>
                     </div>
                 </div>
             </div>
@@ -101,17 +106,20 @@
                 <div class="col-md">
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Family having 🫀 Heart Problem background</label>
-                        <input class="form-control" name="family_heart_problem_background" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="e.g. yes or no" required>
+                        <select class="form-select" name="family_heart_problem_background" id="exampleInputPassword1">
+                            <option value="1">yes</option>
+                            <option value="0">no</option>
+                        </select>
                     </div>
                 </div>
                 <div class="col-md">
                     <div class="col-md">
                         <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Health Status 👨🏻‍⚕️</label>
-                            <select class="form-select" name="health_status" id="exampleInputPassword1">
-                                <option value="None">Healthy</option>
-                                <option value="male">Unhealthy</option>
-                                <option value="female">Average</option>
+                            <label for="exampleInputPassword1" class="form-label">Diet 👨🏻‍⚕️</label>
+                            <select class="form-select" name="diet" id="exampleInputPassword1">
+                                <option value="1">Healthy</option>
+                                <option value="-1">Unhealthy</option>
+                                <option value="0">Average</option>
                             </select>
                         </div>
                     </div>
@@ -122,8 +130,8 @@
                 <label class="form-check-label" for="exampleCheck1">Providing all the information to the best of your knowledge</label>
             </div>
             <div class="text-center">
-                <button type="submit" class="btn btn-warning">Predict</button>
-            </div>
+                <button type="submit" class="btn btn-warning" id="predictButton">Predict</button>
+            </div>            
         </form>
     </div>
     <!-- Footer -->
@@ -141,7 +149,8 @@
       </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
