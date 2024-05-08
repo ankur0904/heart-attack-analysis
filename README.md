@@ -1,4 +1,4 @@
-# Heart-Attack-Prediction-Model (A group Project)
+# Heart-Attack-Prediction-Model (A \*group Project\*)
 ## Introduction
 Welcome to the Heart Attack Prediction repository! Here, you'll find an innovative model designed to predict the risk of heart attacks based on basic health parameters. Utilizing advanced machine learning techniques and a user-friendly Flask web application, this project aims to provide valuable insights into cardiovascular health.
 
